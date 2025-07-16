@@ -184,7 +184,7 @@
       const wordPair = mmbop[currentWordIndex];
       const direction = document.querySelector('input[name="direction"]:checked').value;
       let translation = direction === "en-de" ? wordPair.de : wordPair.en;
-      document.getElementById("feedbackArea").innerText = ` "${wordPair[direction.split('-')[0]]}"  ${translation}`;
+      document.getElementById("feedbackArea").innerText = `${translation}`;
     }
 
     function nextWord() {
